@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "ru">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Макросы</title>
+		<link rel = "stylesheet" href = "styles/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<nav>
+			<div id = "logocont"><a href = "index.html"><img src = "images/logo.png" alt = "" id = "logo" class = "logo"></a></div>
+			<div class = "topnav" id = "navbuts">
+				<a href = "auth.html">Авторизация</a>
+				<a href = "rooms.html">Комнаты</a>
+				<a href = "devices.html">Устройства и датчики</a>
+				<a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
+					<i class="fa fa-bars" id = "adapt-icon"></i>
+				</a>
+			</div>
+		</nav>
+		<div id = "mega">
+			<main>
+				<h2 id = "head2" class = "headline next rounded shortened">
+					<a href = "javascript: void(0);" class = "text-link">+ Создать новый макрос
+				</a></h2>
+
+				<div class = "clear"><p><br></p></div>
+
+				<h2 id = "head1" class = "headline next dropdown rounded">
+					Существующие макросы: 
+					<a href="javascript:void(0);" class = "expand-icon" onclick='toggleExpandCollapse("blocks-1", "blocks-icon-1", "head1")'>
+						<i id = "blocks-icon-1" class="fa fa-angle-down"></i>
+					</a>
+				</h2>
+				
+				<div id = "blocks-1" class = "room-blocks wrapped next">
+					<div class = "room-block">
+						<p><img src="images/devices/device1.jpg" alt="" class = "room-image"><br>Умная розетка<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device2.jpg" alt="" class = "room-image"><br>Умная колонка<br><br>
+							Состояние: <br><span class = "device-warning"><i class = "fa fa-cog"></i>Требуется настройка</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device3.jpg" alt="" class = "room-image"><br>Умный Холодильник<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device4.jpg" alt="" class = "room-image"><br>Умная камера<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/sensors/sensor5.jpg" alt="" class = "room-image"><br>Датчик номер 5<br><br>
+							Состояние: <br><span class = "device-alert"><i class = "fa fa-exclamation-triangle"></i>Отключено</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/sensors/sensor5.jpg" alt="" class = "room-image"><br>Датчик номер 5<br><br>
+							Состояние: <br><span class = "device-alert"><i class = "fa fa-exclamation-triangle"></i>Отключено</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/sensors/sensor5.jpg" alt="" class = "room-image"><br>Датчик номер 5<br><br>
+							Состояние: <br><span class = "device-alert"><i class = "fa fa-exclamation-triangle"></i>Отключено</span></p>
+					</div>
+
+					<div class = "room-block">
+						<p><a href = "javascript:void(0);" class = "text-link"><img src = "images/create-new.png" alt ="" class = "room-image"><span class = "deleted"> </span><br><br>Создать новый макрос</a>
+					</div>
+				</div>				
+			</main>
+
+			<script src = "js/responsive_nav.js"></script>
+		</div>
+	</body>
+</html>

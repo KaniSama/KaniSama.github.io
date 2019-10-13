@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "ru">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Авторизация</title>
+		<link rel = "stylesheet" href = "styles/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<nav>
+			<div id = "logocont"><a href = "index.html"><img src = "images/logo.png" alt = "" id = "logo" class = "logo"></a></div>
+			<div class = "topnav" id = "navbuts">
+				<a href = "rooms.html">Комнаты</a>
+				<a href = "devices.html">Устройства и датчики</a>
+				<a href = "macros.html">Макросы</a>
+				<a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
+					<i class="fa fa-bars" id = "adapt-icon"></i>
+				</a>
+			</div>
+		</nav>
+		<div id = "mega">
+
+			
+
+			<main class = "authenticate">
+				<h2 class = "headline" id = "auth-head">Авторизация</h2>
+				<p id = "auth-text">Введите логин и пароль в соответствии с информацией вашего аккаунта.<br><br>Нет аккаунта? <a href = "" class = "text-link">Создайте его прямо сейчас!</a>
+
+						<form class = "auth-form">
+							<p>Логин</p>
+							<input class = "textbox" type="text" name="login">
+							<p>Пароль</p>
+							<input class = "textbox" type="password" name="pass">
+							<button class = "button" type="submit">Войти!</button>
+						</form>
+
+				</p>
+			</main>
+
+			<!--footer>
+				<div>Привет, страна</div>
+				<div>Я твой президент</div>
+			</footer-->
+
+			<script src = "js/responsive_nav.js"></script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "ru">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Комнаты</title>
+		<link rel = "stylesheet" href = "styles/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<nav>
+			<div id = "logocont"><a href = "index.html"><img src = "images/logo.png" alt = "" id = "logo" class = "logo"></a>
+			</div>
+			<div class = "topnav" id = "navbuts">
+				<a href = "auth.html">Авторизация</a>
+				<a href = "devices.html">Устройства и датчики</a>
+				<a href = "macros.html">Макросы</a>
+				<a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
+					<i class="fa fa-bars" id = "adapt-icon"></i>
+				</a>
+			</div>
+		</nav>
+		<div id = "mega">
+			<main>
+				<h2 class = "headline next dropdown rounded" id = "head1">Комната номер 1 
+					<a href="javascript:void(0);" class = "expand-icon" onclick='toggleExpandCollapseNotWrapped("blocks-1", "blocks-icon-1", "head1")'>
+						<i id = "blocks-icon-1" class="fa fa-angle-down"></i>
+					</a>
+				</h2>
+				<div id = "blocks-1" class = "room-blocks next">
+					<div class = "room-block">
+						<p><img src="images/rooms/room1.jpg" alt="" class = "room-image"><br>Комната номер 1<br></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device3.jpg" alt="" class = "room-image"><br>Умный Холодильник<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device4.jpg" alt="" class = "room-image"><br>Умная камера<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/sensors/sensor4.jpg" alt="" class = "room-image"><br>Датчик номер 4<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+				</div>
+
+				<div class = "clear"><p><br></p></div>
+
+				<h2 class = "headline next dropdown rounded" id = "head2">Комната номер 2 
+					<a href="javascript:void(0);" class = "expand-icon" onclick='toggleExpandCollapseNotWrapped("blocks-2", "blocks-icon-2", "head2")'>
+						<i id = "blocks-icon-2" class="fa fa-angle-down"></i>
+					</a>
+				</h2>
+				<div id ="blocks-2" class = "room-blocks next">
+					<div class = "room-block"><p><img src="images/rooms/room2.jpg" alt="" class = "room-image"><br>Комната номер 2</p></div>
+					<div class = "room-block">
+						<p><img src="images/devices/device3.jpg" alt="" class = "room-image"><br>Умный Холодильник<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device4.jpg" alt="" class = "room-image"><br>Умная камера<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device1.jpg" alt="" class = "room-image"><br>Умная розетка<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/sensors/sensor5.jpg" alt="" class = "room-image"><br>Датчик номер 5<br><br>
+							Состояние: <br><span class = "device-alert"><i class = "fa fa-exclamation-triangle"></i>Отключено</span></p>
+					</div>
+				</div>
+				
+				<div class = "clear"><p><br></p></div>
+
+				<h2 class = "headline next dropdown rounded" id = "head3">Комната номер 3 
+					<a href="javascript:void(0);" class = "expand-icon" onclick='toggleExpandCollapseNotWrapped("blocks-3", "blocks-icon-3", "head3")'>
+						<i id = "blocks-icon-3" class="fa fa-angle-down"></i>
+					</a>
+				</h2>
+				<div id ="blocks-3" class = "room-blocks next">
+					<div class = "room-block"><p><img src="images/rooms/room3.jpg" alt="" class = "room-image"><br>Комната номер 3</p></div>
+					<div class = "room-block">
+						<p><img src="images/devices/device1.jpg" alt="" class = "room-image"><br>Умная розетка<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device3.jpg" alt="" class = "room-image"><br>Умный Холодильник<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device4.jpg" alt="" class = "room-image"><br>Умная камера<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/devices/device1.jpg" alt="" class = "room-image"><br>Умная розетка<br><br>
+							Состояние: <br><span class = "device-active"><i class = "fa fa-check-circle"></i>Отлично!</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/sensors/sensor2.jpg" alt="" class = "room-image"><br>Датчик номер 2<br><br>
+							Состояние: <br><span class = "device-alert"><i class = "fa fa-exclamation-triangle"></i>Отключено</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/sensors/sensor1.jpg" alt="" class = "room-image"><br>Датчик номер 1<br><br>
+							Состояние: <br><span class = "device-warning"><i class = "fa fa-cog"></i>Требуется настройка</span></p>
+					</div>
+					<div class = "room-block">
+						<p><img src="images/sensors/sensor5.jpg" alt="" class = "room-image"><br>Датчик номер 5<br><br>
+							Состояние: <br><span class = "device-warning"><i class = "fa fa-cog"></i>Требуется настройка</span></p>
+					</div>
+				</div>
+			</main>
+
+			<!--footer>
+				<div id = "">Привет, страна</div>
+				<div id = "">Я твой президент!</div>
+			</footer-->
+
+
+			<script src = "js/responsive_nav.js"></script>
+		</div>
+	</body>
+</html>
