@@ -188,6 +188,7 @@ html[data-theme='dark'] {
 .tooltip {
   position: relative;
   display: inline-block;
+  cursor: pointer;
   /*border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
@@ -195,8 +196,8 @@ html[data-theme='dark'] {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
-  color: #fff;
+  background-color: #111111;
+  color: #eeeeee;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
@@ -204,12 +205,13 @@ html[data-theme='dark'] {
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
-  top: -5px;
-  right: 105%;
+  top: -10px;
+  left: 105%;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
+  text-size: 12px;
+  padding: 2px;
   visibility: visible;
-  cursor: pointer;
 }
