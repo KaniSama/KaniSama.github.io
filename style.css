@@ -145,6 +145,23 @@ ul.tree li:last-child:before {
       typing 2s steps(50, end),
       blink-caret .75s step-end infinite;
   }
+
+  footer {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+  }
+
+  .tooltip .tooltiptext {
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 105%;
+  }
 }
 @media screen and (max-width: 449px) {
   footer p {
@@ -160,13 +177,20 @@ ul.tree li:last-child:before {
       typing 1.5s steps(50, end),
       blink-caret .75s step-end infinite;
   }
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 
-  width: 100%;
+  footer {
+    position: relative;
+
+    width: 100%;
+  }
+
+  .tooltip .tooltiptext {
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 105%;
+    right: 50%;
+  }
 }
 
 html[data-theme='dark'] {
@@ -201,12 +225,6 @@ html[data-theme='dark'] {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  left: 105%;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
