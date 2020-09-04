@@ -1,0 +1,184 @@
+* {
+  font-family: 'Source Code Pro', monospace;
+  /*font-family: 'VT323', monospace;*/
+
+  /*cursor: url('cursors/cur.png') 8 7, pointer;*/
+  background-color: #eeeeee;
+}
+
+body {
+  width: 80%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  font-size: 12px;
+  padding: 2px;
+  border-radius: 3px;
+
+  color: #f9471f;
+  text-decoration: none;
+
+  transition: background-color 0.1s ease-in-out;
+}
+a:hover {
+  background-color: rgba(255, 71, 31, .8);
+  /*cursor: url('cursors/hand.png') 11 7, pointer;*/
+  color: #eeeeee;
+}
+
+button {
+  background-color: rgba(0,0,0,0);
+  color: #f9471f;
+  border-color: #f9471f;
+  border-radius: 3px;
+  border: 1px solid;
+  font-weight: bold;
+
+  transition: background-color 0.1s ease-in-out;
+}
+button:hover {
+  cursor: pointer;  /*url('../cursors/hand.png') 11 7, pointer;*/
+
+  background-color: rgba(255, 71, 31, .8);
+  /*cursor: url('cursors/hand.png') 11 7, pointer;*/
+  color: #eeeeee;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #f9471f;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+input:checked {
+  border: 6px solid #f9471f;
+}
+input:hover {
+  cursor: pointer;
+}
+label:hover {
+  cursor: pointer;
+}
+
+/*ul stylization*/
+ul.tree, ul.tree ul {
+ list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.tree ul {
+  margin-left: 10px;
+}
+ul.tree li {
+  margin: 0;
+  padding: 0 7px;
+  line-height: 20px;
+  /*color: #369;*/
+  font-weight: bold;
+  border-left:1px solid rgb(100,100,100);
+
+}
+ul.tree li:last-child {
+    border-left:none;
+}
+ul.tree li:before {
+   position:relative;
+   top:-0.3em;
+   height:1em;
+   width:12px;
+   color:white;
+   border-bottom:1px solid rgb(100,100,100);
+   content:"";
+   display:inline-block;
+   left:-7px;
+}
+ul.tree li:last-child:before {
+   border-left:1px solid rgb(100,100,100);
+}
+
+/*typewriter effect*/
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /*border-right: .15em solid orange; /* The typwriter cursor */
+  padding-bottom: 12px;
+  white-space: nowrap; /* Keeps the content on a single line */
+  /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/*footer and media*/
+@media screen and (min-width: 450px) {
+  footer p {
+    font-size: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  body {
+    width: 80%;
+  }
+  .typewriter h5 {
+    animation:
+      typing 2s steps(50, end),
+      blink-caret .75s step-end infinite;
+  }
+}
+@media screen and (max-width: 449px) {
+  footer p {
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body {
+    width: 100%;
+  }
+  .typewriter h5 {
+    animation:
+      typing 1.5s steps(50, end),
+      blink-caret .75s step-end infinite;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+}
+
+html[data-theme='dark'] {
+  filter: invert(1) hue-rotate(180deg) /*grayscale(1)*/;
+}
+
+#lon, #loff {
+  display: none;
+}
+#lon.active {
+  display:block;
+}
+#loff.active{
+  display:block;
+}
