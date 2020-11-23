@@ -110,6 +110,36 @@ ul.tree li:last-child:before {
    border-left:1px solid rgb(100,100,100);
 }
 
+/* Show/hide nested list items */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow */
+.liactive {
+  display: block;
+}
+/*--------------*/
+
 /*typewriter effect*/
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -154,9 +184,14 @@ ul.tree li:last-child:before {
 
     width: 100%;
   }
+  .collapsable {
+    display: inline;
+  }
+  .expandable {
+    display: none;
+  }
 
   .tooltip .tooltiptext {
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
     top: -10px;
@@ -182,6 +217,12 @@ ul.tree li:last-child:before {
     position: relative;
 
     width: 100%;
+  }
+  .collapsable {
+    display: none;
+  }
+  .expandable {
+    display: inline;
   }
 
   .tooltip .tooltiptext {
