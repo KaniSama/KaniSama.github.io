@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Kani's Blog</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="typewriter blog">
+            <h5>Kani's gamedev blog</h5>
+        </div>
+
+        <button class="blog-back-button" onclick="goBack();">Back</button>
+        <button class="blog-up-button" onclick="window.scrollTo(0,0);">Up</button>
+
+        <hr>
+
+        <!--div class="blogpost">
+            <div id="2021-4-4_02-40" class="blogpost-header">
+                <button class="collapse-button" onclick="toggle_collapse('text_2021-4-4_02-40');">...</button>
+                <p class="blogpost-header-text">[parent_date]</p>
+            </div>
+            <div id="text_2021-4-4_02-40" class="blogpost-text collapsed">
+                <hr>
+                <p></p>
+            </div>
+        </div>
+
+        <hr-->
+
+        <div class="blogpost">
+            <div id="2021-4-4_04-28" class="blogpost-header">
+                <button class="collapse-button" onclick="toggle_collapse('text_2021-4-4_04-28');">...</button>
+                <p class="blogpost-header-text">[parent_date] | Why and how a Roguelike Metroidvania could work</p>
+            </div>
+            <div id="text_2021-4-4_04-28" class="blogpost-text">
+                <hr>
+                <p>Roguelike and Metroidvania are polar opposite genres. It's true, just look at them!</p>
+                <p>In a metroidvania game everything has to be designed very intricately, so that nothing would feel out of place, and nothing could even in theory lock you out of progression.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="blogpost">
+            <div id="2021-4-4_04-28" class="blogpost-header">
+                <button class="collapse-button" onclick="toggle_collapse('text_2021-4-4_04-28');">...</button>
+                <p class="blogpost-header-text">[parent_date] | The idea in question and the struggle</p>
+            </div>
+            <div id="text_2021-4-4_04-28" class="blogpost-text collapsed">
+                <hr>
+                <p>An idea struck me recently to make a game. I haven't seen a game like this executed well yet, so making one myself is certainly tempting.</p>
+                <p>Here is the idea: a <strong>roguelike metroidvania</strong>.<br></p>
+                <p>Yes, I know that Dead Cells exists. No, I haven't played it yet. What of it? Dead Cells isn't even a game I'm considering as inspiration. I'm not saying it's not good, it's just not the game I'm looking for (at least that's what I think. As I said, I haven't played it).</p>
+                <p>But look! In the next blogpost I'll explain what I think a game like that could look like.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="blogpost">
+            <div id="2021-4-4_04-00" class="blogpost-header">
+                <button class="collapse-button" onclick="toggle_collapse('text_2021-4-4_04-00');">...</button>
+                <p class="blogpost-header-text">[parent_date] | A wild idea appears!</p>
+            </div>
+            <div id="text_2021-4-4_04-00" class="blogpost-text collapsed">
+                <hr>
+                <p>Hey. Whats up?</p>
+                <p>I've been thinking about making a game. Better explanation in next post.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <script src="blog.js"></script>
+        <!--script>replace();</script-->
+    </body>
+</html>
