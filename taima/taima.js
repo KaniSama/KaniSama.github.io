@@ -1,5 +1,6 @@
 //name = taima.js
 var timerSetTimeButton = document.getElementById('timerSetTimeButton');
+var timerResetButton = document.getElementById('timerResetButton');
 var output = {
     hours: document.getElementById('timerHoursText'),
     minutes: document.getElementById('timerMinutesText'),
@@ -7,6 +8,7 @@ var output = {
 }
 
 timerSetTimeButton.addEventListener("click", timerStart);
+timerResetButton.addEventListener("click", reset);
 
 timerSet = false;
 
@@ -56,4 +58,8 @@ function outputs() {
     output.hours.innerHTML = time.hours;
     output.minutes.innerHTML = time.minutes;
     output.seconds.innerHTML = time.seconds;
+}
+
+function reset() {
+    location.reload();
 }
