@@ -1,0 +1,42 @@
+a {
+    color: #ff4400;
+}
+body {
+    background-color: #dee1ec;
+    
+}
+img {
+    width: 100%;
+}
+
+.bg {
+    opacity: 0.6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: -100;
+}
+.btn-primary {
+    background-color: #0A0000;
+    border-color: #ff0000;
+}
+.btn-primary:hover {
+    background-color: #AA0000;
+    border-color: #0A0000;
+}
+.btn-primary:active:focus, .btn-primary:active, .btn-primary:focus {
+    color: #ffffff !important;
+    background-color: #CC2222 !important;
+    border-color: #500000 !important;
+    box-shadow: #500000 !important;
+    outline: #AA0000 !important;
+}
+.thing {
+    border-radius: 5px;
+    background-color: #dee1ec;
+}
+.cropped {
+    overflow: hidden;
+}
