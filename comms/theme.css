@@ -1,3 +1,7 @@
+/* {
+    font-family: 'Source Code Pro', monospace;
+}*/
+
 a {
     color: #ff4400;
 }
@@ -15,7 +19,7 @@ body {
     width:100%;
 }
 .bg {
-    opacity: 0.6;
+    /*opacity: 0.6;*/
     position: fixed;
     left: 0;
     top: 0;
@@ -40,8 +44,20 @@ body {
 }
 .thing {
     border-radius: 5px;
-    background-color: #dee1ec;
+    background-color: /*#dee1ec*/ rgba(246, 249, 250, 0.76);
+    backdrop-filter: blur(10px);
 }
 .cropped {
     overflow: hidden;
+}
+
+@media screen and (max-width: 400px) {
+    .w-75 {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 401px) {
+    .w-75 {
+        width: 75%;
+    }
 }
