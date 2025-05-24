@@ -1,4 +1,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+    <loc>https://quartz.jzhao.xyz/database/characters/Character-Index</loc>
+    <lastmod>2025-05-24T18:49:59.907Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/database/characters/Ellis</loc>
+    <lastmod>2025-05-24T18:50:15.852Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/database/characters/protagonists/Kim</loc>
+    <lastmod>2025-05-24T18:53:53.871Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/database/characters/protagonists/Robin</loc>
+    <lastmod>2025-05-24T18:53:50.831Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/database/characters/protagonists/Valerie</loc>
+    <lastmod>2025-05-24T18:53:49.606Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/database/characters/protagonists/Winry</loc>
+    <lastmod>2025-05-24T18:53:47.369Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/database/characters/rivals/Nightingale</loc>
+    <lastmod>2025-05-24T18:57:00.433Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/database/setting/Setting-Index</loc>
+    <lastmod>2025-05-24T18:59:00.451Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/database/setting/places/Places</loc>
+    <lastmod>2025-05-24T19:00:02.079Z</lastmod>
+  </url><url>
     <loc>https://quartz.jzhao.xyz/</loc>
     <lastmod>2023-08-23T19:09:04.000Z</lastmod>
   </url><url>
@@ -8,6 +35,6 @@
     <loc>https://quartz.jzhao.xyz/main/Pitch-Document</loc>
     <lastmod>2025-05-24T18:22:38.161Z</lastmod>
   </url><url>
-    <loc>https://quartz.jzhao.xyz/main/Story</loc>
-    <lastmod>2025-05-24T18:22:49.528Z</lastmod>
+    <loc>https://quartz.jzhao.xyz/main/Story-Index</loc>
+    <lastmod>2025-05-24T18:47:40.602Z</lastmod>
   </url></urlset>
