@@ -6,6 +6,18 @@
       <description>Last 10 notes on Bandwitch!</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Art Index</title>
+    <link>https://quartz.jzhao.xyz/art/Art-Index</link>
+    <guid>https://quartz.jzhao.xyz/art/Art-Index</guid>
+    <description></description>
+    <pubDate>Sun, 01 Jun 2025 09:05:19 GMT</pubDate>
+  </item><item>
+    <title>ELGA</title>
+    <link>https://quartz.jzhao.xyz/database/characters/secondary-characters/Elusive-Lighthouse-Ghost-Artist</link>
+    <guid>https://quartz.jzhao.xyz/database/characters/secondary-characters/Elusive-Lighthouse-Ghost-Artist</guid>
+    <description>Elusive Lighthouse Ghost Artist.</description>
+    <pubDate>Sat, 31 May 2025 17:51:44 GMT</pubDate>
+  </item><item>
     <title>Synopsis</title>
     <link>https://quartz.jzhao.xyz/main/Synopsis</link>
     <guid>https://quartz.jzhao.xyz/main/Synopsis</guid>
@@ -53,18 +65,6 @@
     <guid>https://quartz.jzhao.xyz/database/characters/protagonists/Robin</guid>
     <description>Robin Finch. The drummer in Bandwitch!.</description>
     <pubDate>Sun, 25 May 2025 18:59:14 GMT</pubDate>
-  </item><item>
-    <title>Kim</title>
-    <link>https://quartz.jzhao.xyz/database/characters/protagonists/Kim</link>
-    <guid>https://quartz.jzhao.xyz/database/characters/protagonists/Kim</guid>
-    <description>Kim Ahn. The multi-instrumentalist of Bandwitch!. Character notes: Kim is a very gentle person, kind and motherly.</description>
-    <pubDate>Sun, 25 May 2025 18:59:05 GMT</pubDate>
-  </item><item>
-    <title>Kim&#039;s rival</title>
-    <link>https://quartz.jzhao.xyz/database/characters/antagonists/Kim's-rival</link>
-    <guid>https://quartz.jzhao.xyz/database/characters/antagonists/Kim's-rival</guid>
-    <description></description>
-    <pubDate>Sun, 25 May 2025 18:56:13 GMT</pubDate>
   </item>
     </channel>
   </rss>
